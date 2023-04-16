@@ -63,7 +63,6 @@ function LoginForm() {
               name='loginbtn'
               type='submit'
               value='Entrar'
-              disabled
             />
           </Form>
         </div>
