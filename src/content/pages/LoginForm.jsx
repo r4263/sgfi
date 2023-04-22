@@ -2,6 +2,7 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../stylesheets/sgfi.css'
+import {UsuarioDataService} from '../services/usuario.service'
 
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import { useState } from 'react';
@@ -12,6 +13,20 @@ import { Label } from 'reactstrap';
 import { Input } from 'reactstrap';
 import { FormText } from 'reactstrap';
 
+
+function handleClick(){
+
+  const usuario = {
+    nome: 'Maycon',
+    login: 'maycon',
+    email: 'maycon.jung7@gmail.com',
+    senha: 'teste',
+    permissaonivel: '7',
+    datacadastro: '01/01/1999',
+    ultimologin: '01/01/2000'
+}
+UsuarioDataService.create(usuario);
+}
 
 function LoginForm() {
 
@@ -63,6 +78,7 @@ function LoginForm() {
               name='loginbtn'
               type='submit'
               value='Entrar'
+              formAction={handleClick}
             />
           </Form>
         </div>
