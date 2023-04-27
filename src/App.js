@@ -12,11 +12,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<AppLayout />}>
-          <Route index element={<Inicio />} />
-          <Route path='/compras' element={<Compras />} />
-          <Route path='/estoque' element={<Estoque />} />
-          <Route path='/insumos' element={<Insumos />} />
+        <Route index element={<Login />}/>
+        <Route path='/dashboard' element={<AppLayout />}>
+          <Route path='/dashboard/inicio' element={<Inicio />} />
+          <Route path='/dashboard/compras' element={<Compras />} />
+          <Route path='/dashboard/estoque' element={<Estoque />} />
+          <Route path='/dashboard/insumos' element={<Insumos />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -6,25 +6,25 @@ const sidebarNavItems = [
     {
         display: 'Início',
         icon: <i className='bx bx-home'></i>,
-        to: '/',
+        to: '/dashboard/inicio',
         section: ''
     },
     {
         display: 'Compras',
         icon: <i className='bx bx-cart-alt'></i>,
-        to: '/compras',
+        to: '/dashboard/compras',
         section: 'compras'
     },
     {
         display: 'Estoque',
         icon: <i className='bx bxs-component'></i>,
-        to: '/estoque',
+        to: '/dashboard/estoque',
         section: 'estoque'
     },
     {
         display: 'Insumos',
         icon: <i className='bx bxs-flask'></i>,
-        to: '/insumos',
+        to: '/dashboard/insumos',
         section: 'insumos'
     },
 ]
