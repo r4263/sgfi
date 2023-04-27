@@ -1,7 +1,9 @@
 .layoutdiv {
-    padding: 50px 0px 0px 23%
+    padding: 50px 0px 0px 270px;
 }
 
 @media screen and (max-width: 1150px) {
-    .layoutdiv {}
+    .layoutdiv {
+        padding: 50px 0px 0px 140px;
+    }
 }

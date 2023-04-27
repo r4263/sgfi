@@ -20,7 +20,11 @@ const Compras = () => {
         var response = fetchData();
     })
 
-    return <div>{response}</div>;
+    return(
+        <div>
+            
+        </div>
+    )
     
 };
 
