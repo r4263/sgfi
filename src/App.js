@@ -8,8 +8,6 @@ import Inicio from './components/inicio/inicio.component';
 import Compras from './components/compras/compras.component';
 import Estoque from './components/estoque/estoque.component';
 
-import { isAuthenticated } from './components/auth'
-
 function App() {
   return (
     <BrowserRouter>

@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import './compras.css';
 import React, { useState, useEffect } from 'react';
 const url = 'http://localhost:4444/api';
 
@@ -22,7 +22,9 @@ const Compras = () => {
 
     return(
         <div>
+            <div className="roundiv">
             
+            </div>
         </div>
     )
     
