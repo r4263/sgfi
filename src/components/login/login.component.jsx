@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css'
 import axios from 'axios';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Link, Navigate, Redirect } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import { Form } from 'reactstrap';
 import { FormGroup } from 'reactstrap';
 import { Label } from 'reactstrap';
 import { Input } from 'reactstrap';
+import { isAuthenticated } from "../auth"
 
 
 
@@ -37,10 +38,10 @@ const Login = () => {
     };
 
 
-    function verifyStatus(){
-        console.log(status);
-        if(status === '200'){
-            console.log("OK, autorizado")
+    const handleLoginStatusChange = event => {
+        if (status === 200) {
+            console.log("autorizado");
+            return <Navigate path="/dashboard/" />;
         }
     }
 
@@ -48,10 +49,9 @@ const Login = () => {
         event.preventDefault();
         console.log(fetchData());
     }
-
     useEffect(() => {
-        verifyStatus();
-    }, status)
+        handleLoginStatusChange();
+    })
 
 
     return (
