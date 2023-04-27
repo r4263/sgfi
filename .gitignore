@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/node-postgres/node_modules
 /.pnp
 .pnp.js
 

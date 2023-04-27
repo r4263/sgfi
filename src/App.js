@@ -1,27 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
-import LoginForm from "./content/pages/LoginForm";
-import MainPage from "./content/pages/MainPage";
-
-
-//stylesheets
-import './App.css';
-
+import './App.scss';
+import 'boxicons/css/boxicons.min.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AppLayout from './components/layout/AppLayout';
+import Login from './components/login/login.component';
+import Insumos from './components/insumos/insumos.component';
+import Inicio from './components/inicio/inicio.component';
+import Compras from './components/compras/compras.component';
+import Estoque from './components/estoque/estoque.component';
 
 function App() {
   return (
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-          <Route index element={<LoginForm />} />
-          <Route path='/home' element={<teste />} />
+        <Route path='/' element={<AppLayout />}>
+          <Route index element={<Inicio />} />
+          <Route path='/compras' element={<Compras />} />
+          <Route path='/estoque' element={<Estoque />} />
+          <Route path='/insumos' element={<Insumos />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
 }
-
-ReactDOM.render(<App />, document.getElementById("root"));
 
 export default App;
