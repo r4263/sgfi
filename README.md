@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+#  NÃO FUNCIONAL!!!
+
+# Dependencias
 npm install -S axios
 npm install -g sass
 npm install boxicons --save
