@@ -1,6 +1,6 @@
 const Estoque = () => {
 
-    return <div>This is Blank page</div>;
+    return <div>Pagina de estoque</div>;
 };
 
 export default Estoque;

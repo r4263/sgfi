@@ -1,5 +1,8 @@
 const Inicio = () => {
-    return <div>This is Blank page</div>;
+    return( 
+    <div>Pagina inicial</div>
+    
+    )
 };
 
 export default Inicio;

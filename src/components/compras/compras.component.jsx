@@ -17,10 +17,11 @@ const Compras = () => {
     };
 
     useEffect(() => {
-        fetchData();
+        var response = fetchData();
     })
 
-    return <div>This is Blank page</div>;
+    return <div>{response}</div>;
+    
 };
 
 export default Compras;

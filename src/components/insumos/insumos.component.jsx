@@ -1,5 +1,5 @@
 const Insumos = () => {
-    return <div>This is Blank page</div>;
+    return <div>Pagina de Insumos</div>;
 };
 
 export default Insumos;
