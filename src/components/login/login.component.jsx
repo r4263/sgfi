@@ -41,7 +41,8 @@ const Login = () => {
     const handleLoginStatusChange = event => {
         if (status === 200) {
             console.log("autorizado");
-            return <Navigate path="/dashboard/" />;
+            //return <Navigate path="/dashboard/" />;
+            
         }
     }
 
