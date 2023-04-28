@@ -1,9 +1,10 @@
 .roundiv{
-    border-width: 10px;
+    border-width: 1px;
     margin: 10px;
-    border-color: black;
+    border-color: #f8f8f8;
     border: solid;
-    border-radius: 5px;
+    border-radius: 1px;
     background-color: #f0f0f0;
     vertical-align: center;
+    padding: 15px;
 }

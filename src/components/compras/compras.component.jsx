@@ -23,7 +23,8 @@ const Compras = () => {
     return(
         <div>
             <div className="roundiv">
-            
+            <h1>Teste</h1>
+            <h1>Teste</h1>
             </div>
         </div>
     )
